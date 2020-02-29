@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      #a {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+body{
+
+  background-image: url('images.jfif');
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+    </style>
+  </head>
+<body>
+  
+<div class="row site-section" id="faq-section">
+          <form align="center" action="http://localhost:5000" method="POST">
+            <p id="a"><b></b><font color="red">Enter your source file :</font></b> </p>
+            <p><textarea id="a" align="center" name="query" rows="8" cols="50" autofocus>{{query}}</textarea></p>
+            <br>
+            <p id="a"><input type="submit" name="submit" value="CHECK PLAGIARISM"></p>
+            <br>
+            <p><h3>{{output}}</h3></p>
+         </form>
+        
+        </div>
+        </body>
+        </html>
